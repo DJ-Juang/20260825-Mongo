@@ -29,7 +29,7 @@ textarea{
 <div class="bg-white rounded shadow p-6 mb-6">
 
 <h2 class="font-bold mb-3">
-步驟 1：貼上 travel-data.json
+步驟 1：貼上 data.json
 </h2>
 
 <textarea
@@ -338,7 +338,7 @@ function downloadJson(){
     const a =
         document.createElement("a");
     a.href = url;
-    a.download = "travel-data.json";
+    a.download = "data.json";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
