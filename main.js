@@ -28,7 +28,7 @@ async function loadTravelData(){
   try{
 
     const response =
-      await fetch("travel-data.json");
+      await fetch("data.json");
 
     travelData =
       await response.json();
