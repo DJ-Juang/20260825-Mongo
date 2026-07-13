@@ -1,7 +1,7 @@
 const ITEMS_PER_PAGE = 9;
 let currentPage = 1;
 let filterMode = 'all'; // 'all'（全部）或 'favorites'（僅收藏）
-let favorites = JSON.parse(localStorage.getItem('travel_favorites')) || [];
+let favorites = JSON.parse(localStorage.getItem('mongo_favorites')) || [];
 let travelData = [];
 let searchKeyword = '';
 
@@ -417,7 +417,7 @@ window.toggleFavorite = function(id) {
     favorites.splice(index, 1);
   }
   
-  localStorage.setItem('travel_favorites', JSON.stringify(favorites));
+  localStorage.setItem('mongo_favorites', JSON.stringify(favorites));
   renderGallery();
   renderPagination();
   updateStats();
@@ -455,7 +455,7 @@ function setupModal() {
 
   btnConfirm.addEventListener('click', () => {
     favorites = [];
-    localStorage.removeItem('travel_favorites');
+    localStorage.removeItem('mongo_favorites');
     filterMode = 'all';
     currentPage = 1;
     renderGallery();
