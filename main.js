@@ -28,7 +28,7 @@ async function loadTravelData(){
   try{
 
     const response =
-      await fetch("data.json");
+      await fetch("mongo.json");
 
     travelData =
       await response.json();
