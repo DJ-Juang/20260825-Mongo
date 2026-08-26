@@ -20,13 +20,20 @@
     "url": "https://drive.google.com/file/d/1919ZROSDXvgvs2QISxQTwzmk1In5syFN/view?usp=drive_link",
     "category": "內蒙古"
   },
-    {
+  {
     "id": 4,
     "title": "海拉爾",
     "type": "image",
     "url": "https://drive.google.com/file/d/13DZ2oA9-YtmI6ecJ9yMUOmLJddNLBW_7/view?usp=drivesdk",
     "category": "內蒙古",
     "description": "哈達特色接機"
+  },
+  {
+    "id": 5,
+    "title": "呼倫貝爾",
+    "type": "image",
+    "url": "https://drive.google.com/file/d/15H_i4aURHvR2ogaAQeeYr52z4efPsO3R/view?usp=drivesdk",
+    "category": "內蒙古"
   }
 ]
 
